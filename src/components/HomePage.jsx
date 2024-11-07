@@ -1,8 +1,11 @@
 // import { Row, Col } from "react-bootstrap";
 import "../styles/HomePage.scss";
+import Header from "./Header";
 
 const HomePage = () => {
   return (
+    <div className="home-container">
+    <Header />
       <div className="flex-container">
 
         <div className="flex-left">
@@ -24,6 +27,7 @@ const HomePage = () => {
         </div>
 
       </div>
+    </div>
   )
 }
 

@@ -31,6 +31,15 @@ nav .nav-right {
   list-style: none;
 }
 
+a {
+  &:link,
+  &:visited{
+    text-decoration: none;
+    display: inline-block;
+    color: #9C9C9C;
+  }
+}
+
 .length {
   width: 2rem;
 }

@@ -1,8 +1,11 @@
 @import "../styles/variables.scss";
 
-.flex-container {
+.home-container {
   width: 100%;
   background-color: $color-black-dark;
+}
+
+.flex-container {
   color: $color-white;
   display: flex;
   gap: 4rem;
