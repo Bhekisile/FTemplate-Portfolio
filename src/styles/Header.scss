@@ -1,0 +1,36 @@
+@import "../styles/variables.scss";
+
+.container {
+  background-color: $color-black-dark; 
+  margin: 0; 
+  padding: 0;
+  height: 4rem;
+  width: 100%;
+}
+
+.secondary-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #9C9C9C;
+  background-color: #1B1B1B;
+  width: 80%;
+  margin: 0 10%;
+}
+
+nav .nav-left {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 58rem;
+}
+
+nav .nav-right {
+  display: flex;
+  list-style: none;
+}
+
+.length {
+  width: 2rem;
+}
