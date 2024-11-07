@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  color: #9C9C9C;
+  color: $color-text-grey;
   background-color: #1B1B1B;
   width: 80%;
   margin: 0 10%;
@@ -36,7 +36,7 @@ a {
   &:visited{
     text-decoration: none;
     display: inline-block;
-    color: #9C9C9C;
+    color: $color-text-grey;
   }
 }
 

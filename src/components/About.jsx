@@ -1,5 +1,18 @@
 import Header from "./Header";
 import '../styles/About.scss';
+import html from '../assets/html.png';
+import css from '../assets/css.png';
+import js from '../assets/js.png';
+import react from '../assets/react.png';
+import redux from '../assets/redux.png';
+import node from '../assets/nodejs.png';
+import express from '../assets/express.png';
+import mongo from '../assets/mongodb.png';
+import postgres from '../assets/postgresSQL.png';
+import ruby from '../assets/ruby.png';
+import rails from '../assets/rails.png';
+
+
 
 const About = () => {
   return (
@@ -11,8 +24,21 @@ const About = () => {
         </div>
         <div className="about-skills">
           <h2>Skills</h2>
-          <p>Database Management, Version Control, Command Line Interface (CLI), Web Development and API Design, RSpec, Capybara and Selenium</p>
+          <p>Database Management, Version Control, Command Line Interface (CLI), Git, GitHub, Web Development and API Design, RSpec, Capybara and Selenium</p>
         </div>
+        <ul className="technologies">
+          <li><img src={html} alt="HTML icon" /> HTML5</li>
+          <li><img src={css} alt="CSS icon" /> CSS3</li>
+          <li><img src={js} alt="JavaScript icon" /> JavaScript</li>
+          <li><img src={react} alt="React icon" /> React</li>
+          <li><img src={redux} alt="Redux icon" /> Redux</li>
+          <li><img src={node} alt="Node icon" /> Node.js</li>
+          <li><img src={express} alt="Express icon" /> Express.js</li>
+          <li><img src={mongo} alt="Mongo icon" /> MongoDB</li>
+          <li><img src={postgres} alt="PostgreSQL icon" /> PostgreSQL</li>
+          <li><img src={ruby} alt="Ruby icon" /> Ruby</li>
+          <li><img src={rails} alt="Ruby on Rails icon" /> Ruby on Rails</li>
+        </ul>
           
           <button>Download my resume</button>
 
