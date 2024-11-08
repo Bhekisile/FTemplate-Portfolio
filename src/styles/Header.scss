@@ -38,8 +38,18 @@ a {
     display: inline-block;
     color: $color-text-grey;
   }
+
+  &:hover {
+    color: $color-primary;
+    font-weight: 600;
+  }
 }
 
 .length {
   width: 2rem;
+}
+
+nav a.active {
+  color: $color-primary;
+  font-weight: 600;
 }

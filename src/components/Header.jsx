@@ -2,17 +2,20 @@ import "../styles/Header.scss";
 import linkedIn from "../assets/linkedIn.png";
 import twitter from "../assets/twitter.png";
 import github from "../assets/githu.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+// import { useState } from "react";
 
 const Header = () => {
+  // const [isActive, setIsActive] = useState(false);
+
   return (
     <nav className="secondary-nav">
       <ul className='nav-left'>
-        <Link to='/' ><li>Home</li></Link>
-        <Link to='/about'><li>About</li></Link>
-        <Link to='/projects'><li>Recent Work</li></Link>
-        <Link to='skills'><li>Skills</li></Link>
-        <Link to='/contact'><li>Contact</li></Link>
+        <NavLink to='/' className={({isActive}) => isActive ? "active" : ""} ><li>Home</li></NavLink>
+        <NavLink to='/about'><li>About</li></NavLink>
+        <NavLink to='/projects'><li>Recent Work</li></NavLink>
+        <NavLink to='skills'><li>Skills</li></NavLink>
+        <NavLink to='/contact'><li>Contact</li></NavLink>
       </ul>
       <ul className='nav-right'>
         <li><img src={linkedIn} alt="LinkedIn icon" /></li>
