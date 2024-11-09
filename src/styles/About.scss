@@ -12,28 +12,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 1.5rem; */
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  /* color: $color-black-medium; */
-  /* margin-top: 2rem; */
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  /* color: $color-black-medium; */
-  /* margin-top: 2rem; */
 }
 
 p {
   width: 38.5rem;
   height: 5.5rem;
   text-align: center;
-  /* margin-bottom: 1.5rem; */
 }
 
 .technologies {
@@ -46,20 +40,14 @@ p {
   height: 15rem;
   margin: 0 auto;
   padding: 1rem;
-  /* margin-left: 2rem; */
   list-style: none;
-  /* text-align: center; */
-  /* border: .1rem solid $color-text-grey; */
   box-shadow: 0 1.5rem 4rem rgba($color-black-dark, 0.15);
 
   & li {
-    /* font-size: 1.5rem; */
-    /* font-weight: 600; */
     display: flex;
     flex-direction: column;
     color: $color-text-grey;
     font-family: 'IBM Plex Mono', sans-serif;
-    /* text-align: center; */
 
     & img {
       width: 3rem;

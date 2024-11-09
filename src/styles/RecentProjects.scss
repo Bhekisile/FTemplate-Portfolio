@@ -1,0 +1,69 @@
+@import "../styles/variables.scss";
+
+.project-container {
+  width: 100%;
+  height: 100%;
+  background-color: $color-black-dark;
+  color: $color-white;
+}
+
+.project-width {
+  width: 80%;
+  margin: 0 10%;
+  padding-top: 3rem;
+}
+
+.project-card {
+  background-color: $color-black-dark;
+  padding: 2rem;
+
+  &__image {
+    height: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  &__details {
+    color: $color-white;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: $color-white;
+  }
+
+  & a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-white;
+      height: 2.3rem;
+      width: 9rem;
+      font-size: 0.9rem;
+      background-image: linear-gradient(
+        to right,
+        rgba($color-green-dark, 0.6),
+        rgba($color-green-light, 0.8)
+      );
+      transition: all .2s;
+    }
+
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba($color-black-dark, 0.15);
+      transform: translateY(-0.2rem);
+      backface-visibility: hidden;
+    }
+  }
+}
+
+.btn-show {
+  background-color: transparent;
+  color: $color-white;
+  border: 1px solid $color-primary;
+
+  &:hover {
+  color: $color-primary;
+  background-color: transparent;
+}
+}
