@@ -1,17 +1,17 @@
 const projectsData = [
   {
     projectName: 'ProShop',
-    projectDescription: 'This is an e-commerce website built with MERN stack. It is an end-to-end application with a seamless user experience and interactions. The customers can search for the product and purchase it online. The admin manages the application and has CRUD permission. It authorizes and authenticates users, allowing them to place an order after authentication and have access to their own account.',
+    projectDescription: 'An e-commerce website built with MERN stack. It is an end-to-end application with a seamless user experience and interactions. The customers can search for the product and purchase it online. The admin manages the application and has CRUD permission. It authorizes and authenticates users, allowing them to place an order after authentication and have access to their own account.',
     imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097095/proshop_nxlyno.png',
     projectUrl: 'https://proshop-q9dt.onrender.com/',
     linkSource: 'https://github.com/Bhekisile/proshop',
   },
   {
     projectName: 'Workout App',
-    projectDescription: 'This is a metric website built with React, CSS, and Jest for tests. It contains data or parameters used for stock screening and displays a list of companies selected from all over the world with the corresponding parameters and values. The user can filter the application by company\'s name. It is more beneficial to those who search for stocks. The data is extracted from the Financial Modeling Prep API.',
+    projectDescription: 'Built with Ruby on Rails, Bootstrap CSS, d3.js, and Rails Action Cable. The app is created for users who enjoy tracking their physical activities. The app allows a user to record an activity type, duration, and date. Every time the user enters data, a chart updates. The user can create friendships and start following and chatting with each other.',
     imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097095/Exercise-rails_oh7bdu.png',
     projectUrl: 'https://metricsstock.netlify.app/',
-    linkSource: 'https://github.com/Bhekisile/Metrics-webapp',
+    linkSource: 'https://github.com/Bhekisile/Workout-app',
   },
   {
     projectName: 'Recipe App',

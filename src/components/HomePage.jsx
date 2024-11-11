@@ -1,6 +1,7 @@
 // import { Row, Col } from "react-bootstrap";
 import "../styles/HomePage.scss";
 import Header from "./Header";
+import cartoon from "../assets/lady-cartoon.jpeg";
 
 const HomePage = () => {
   return (
@@ -23,7 +24,7 @@ const HomePage = () => {
         </div>
 
         <div className="flex-right">
-          <div className="picture"></div>
+          <img src={cartoon} className="picture" alt="Lady cartoon" />
         </div>
 
       </div>
