@@ -23,7 +23,7 @@ const projectsData = [
   
   {
     projectName: 'Space Travelers app',
-    projectDescription: 'Space Travelers Hub is built with React, CSS, and Jest for testing. It is a web application designed to assist users in managing their rocket and mission reservations for space travel. The application aims to provide a platform where users can easily book and keep track of their reserved rockets and missions. Additionally, it offers a profile page feature where users can view the details of their reserved rockets and missions. This kind of application could be useful for space enthusiasts, scientists, or anyone interested in space travel.',
+    projectDescription: 'Space Travelers Hub is built with React, CSS, and Jest for the tests. It is a web application designed to assist users in managing their rocket and mission reservations for space travel. The application aims to provide a platform where users can easily book and keep track of their reserved rockets and missions. Additionally, it offers a profile page feature where users can view the details of their reserved rockets and missions. This kind of application could be useful for space enthusiasts, scientists, or anyone interested in space travel.',
     imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097524/spaceHub_z7ykkp.png',
     projectUrl: 'https://spacetravelershub0x.netlify.app/',
     linkSource: 'https://github.com/Bupilipili/Space-Travelers-Hub',
@@ -37,10 +37,10 @@ const projectsData = [
   },
   {
     projectName: 'Natours',
-    projectDescription: 'The project is built with WordPress and is about university activities. It contains lecturers and the modules related to them. The students can register their credentials and start using this app. Liking of the professors is available only for the login user.',
+    projectDescription: 'The project leverages the advanced knowledge of styling using CSS and Sass. The application showcases the power of HTML and CSS in enhancing its visual appeal. The project features responsive layouts such as grid and flexbox, animations, image layouts, and pure CSS popups.',
     imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097096/Natours_ihkl44.png',
-    projectUrl: 'http://fictional-university.local/',
-    linkSource: 'https://github.com/Bhekisile/Fictional-University',
+    projectUrl: 'https://github.com/Bhekisile/Natours',
+    linkSource: 'https://github.com/Bhekisile/Natours',
   }
 ];
 

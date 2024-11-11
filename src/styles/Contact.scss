@@ -26,6 +26,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1.2rem;
+  font-weight: 500;
+  color: $color-grey-dark;
 }
 
 .message {
@@ -36,4 +38,5 @@
   height: 3rem;
   background-color: $color-green-dark;
   color: $color-white;
+  font-weight: 600;
 }

@@ -58,12 +58,12 @@ p {
     height: 4rem;
     background-color: $color-green-dark;
     color: $color-white;
+    font-weight: 600;
   }
 
   .picture {
     width: 22rem;
     height: 22rem;
-    /* border: .1rem solid $color-grey-dark; */
     padding-top: .2rem;
     border-radius: 50%;
   }

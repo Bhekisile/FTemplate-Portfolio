@@ -17,11 +17,38 @@ const Header = () => {
         <li><NavLink to='/contact'>Contact</NavLink></li>
       </ul>
       <ul className='nav-right'>
-        <li><img src={linkedIn} className="length social-padding" alt="LinkedIn icon" /></li>
-        <li><img src={twitter} className="length" alt="Twitter icon" /></li>
-        <li><img src={github1} className="length social" alt="Github icon"></img></li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/bhekisile-jozi/"
+            className="social-icon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedIn} className="length social-padding" alt="LinkedIn icon" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://x.com/Bhekisile750473"
+            className="social-icon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={twitter} className="length" alt="Twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/Bhekisile"
+            className="social-icon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={github1} className="length social" alt="Github icon" />
+          </a>
+        </li>
       </ul>
-    </nav>      
+    </nav>   
   )
 }
 
