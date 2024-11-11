@@ -1,0 +1,42 @@
+@import "../styles/variables.scss";
+
+.contact-container {
+  width: 80%;
+  height: 90vh;
+  background-color: $color-grey-light-1;
+  margin: 0 10%;
+  padding: 2rem;
+}
+
+.contact-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-form {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: $color-text-grey;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  color: $color-grey-dark;
+}
+
+.message {
+  height: 10rem;
+}
+
+.btn-form {
+  height: 3rem;
+  background-color: $color-green-dark;
+  color: $color-white;
+  font-weight: 600;
+}

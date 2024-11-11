@@ -1,9 +1,74 @@
-import React from 'react'
+import Header from './Header';
+import { useForm, ValidationError } from '@formspree/react';
+import '../styles/Contact.scss';
 
-const contact = () => {
+function Contact() {
+  const [state, handleSubmit] = useForm('mpznvgqj');
+  
+  if (state.succeeded) {
+    document.getElementById('contact-form').reset();
+    return (
+      <p>Thank you for signing up!</p>,
+      <button type='button' btn btn--small-green>Return</button>
+    );
+  }
+
   return (
-    <div>contact</div>
+    <div>
+      <Header />
+      <div className="contact-container">
+        <div className="contact-center">
+          <h1>Get in touch</h1>
+          <p className='mb-0'>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+        </div>
+
+        <form id="contact-form" onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder='Please enter your email' 
+              required 
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="mobile">Mobile</label>
+            <input type="number" id="mobile" name="mobile" placeholder='+233546227839' />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea 
+              id="message" 
+              className="message" 
+              name="message" 
+              placeholder='Enter your message' 
+              required 
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
+          <button 
+            type="submit" 
+            className="btn btn-form"
+            disabled={state.submitting}
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      
+    </div>
   )
 }
 
-export default contact
+export default Contact

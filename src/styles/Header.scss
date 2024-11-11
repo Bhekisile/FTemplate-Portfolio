@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  color: #9C9C9C;
+  color: $color-text-grey;
   background-color: #1B1B1B;
   width: 80%;
   margin: 0 10%;
@@ -23,14 +23,49 @@ nav .nav-left {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 58rem;
+  width: 50rem;
 }
 
 nav .nav-right {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  width: 7rem;
+  padding-left: 0;
+  /* border: .1rem solid red; */
+
+  .social-padding {
+    padding-bottom: .3rem;
+  }
+  
+  .social {
+    padding-bottom: .1rem;
+    /* fill: $color-text-grey; */
+  }
+}
+
+a {
+  &:link,
+  &:visited{
+    text-decoration: none;
+    display: inline-block;
+    color: $color-text-grey;
+  }
+
+  &:hover {
+    color: $color-green-dark;
+    font-weight: 600;
+  }
 }
 
 .length {
-  width: 2rem;
+  width: 1.3rem;
+  color: $color-text-grey;
+  /* background-color: $color-text-grey; */
+}
+
+nav a.active {
+  color: $color-green-dark;
+  font-weight: 600;
 }

@@ -1,8 +1,11 @@
 @import "../styles/variables.scss";
 
-.flex-container {
+.home-container {
   width: 100%;
   background-color: $color-black-dark;
+}
+
+.flex-container {
   color: $color-white;
   display: flex;
   gap: 4rem;
@@ -50,18 +53,19 @@ p {
   margin-bottom: 2.5rem;
 }
 
-.btn {
+.btn--green {
     width: 19rem;
     height: 4rem;
     background-color: $color-green-dark;
     color: $color-white;
+    font-weight: 600;
   }
 
   .picture {
     width: 22rem;
     height: 22rem;
-    border: .1rem solid $color-grey-dark;
     padding-top: .2rem;
+    border-radius: 50%;
   }
 
 
