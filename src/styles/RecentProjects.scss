@@ -1,5 +1,5 @@
 @import "../styles/abstracts/variables.scss";
-/* @import "./abstract/variables.scss" */
+@import "../styles/abstracts/mixins.scss";
 
 .project-container {
   width: 100%;
@@ -16,21 +16,61 @@
 
 .project-card {
   background-color: $color-black-dark;
-  padding: 2rem;
+  /* width: 31.25rem; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4rem;
 
-  &__image {
-    height: 15rem;
-    margin-bottom: 1rem;
+  @include respond(tab-land) {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
   }
 
-  &__details {
-    color: $color-white;
+  &__external-link {
+    margin-bottom: 0;
+    height: 17rem;
+  }
+}
+
+.card-content {
+  width: 44.5%;
+  padding-right: 0;
+  margin-bottom: 2rem;
+
+  @include respond(tab-land) {
+    /* gap: 0; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+  }
+
+  &__image {
+    height: 17rem;
+    max-width: 32.5rem;
+    margin-bottom: 4rem;
+    position: cover;
+    background-position: top;
+  }
+
+  &__heading {
+    margin-top: 7rem;
+  }
+
+  &__description {
+    width: 99%;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   &__links {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: $color-white;
   }
 
@@ -47,7 +87,7 @@
         rgba($color-green-dark, 0.6),
         rgba($color-green-light, 0.8)
       );
-      transition: all .2s;
+      /* transition: all .2s; */
     }
 
     &:hover {

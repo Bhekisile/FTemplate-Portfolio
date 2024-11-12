@@ -1,4 +1,5 @@
 @import "../styles/abstracts/variables.scss";
+@import "../styles/abstracts/mixins.scss";
 
 .contact-container {
   width: 80%;
@@ -20,6 +21,12 @@
   flex-direction: column;
   margin: 0 auto;
   color: $color-text-grey;
+
+  @include respond(phone) {
+    /* gap: 0; */
+    width: 18rem;
+    /* justify-content: center; */
+  }
 }
 
 .form-group {
@@ -39,4 +46,9 @@
   background-color: $color-green-dark;
   color: $color-white;
   font-weight: 600;
+}
+
+input,
+textarea {
+
 }
