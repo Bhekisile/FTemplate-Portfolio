@@ -143,4 +143,9 @@
       height: 3rem;
       margin-top: 1rem;
     }
+
+    &:hover {
+      border: .1rem solid $color-green-dark;
+      color: $color-green-dark;
+    }
   }

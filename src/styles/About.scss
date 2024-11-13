@@ -91,9 +91,21 @@ p {
   margin-top: 2.5rem;
   text-align: center;
   font-weight: 600;
+  color: $color-white;
 
   @include respond(tab-land) {
     margin-top: 4rem;
   }
 }
 
+button a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &:hover {
+    color: $color-green-dark;
+  }
+}

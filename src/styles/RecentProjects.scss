@@ -16,7 +16,6 @@
 
 .project-card {
   background-color: $color-black-dark;
-  /* width: 31.25rem; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -45,7 +44,7 @@
 
   &__image {
     height: 17rem;
-    max-width: 32.5rem;
+    width: 32.5rem;
     margin-bottom: 4rem;
     position: cover;
     background-position: top;
@@ -82,6 +81,10 @@
     @include respond(phone) {
       width: 20.5rem;
     }
+
+    &__link {
+      padding-top: .35rem;
+    }
   }
 
   & a {
@@ -97,7 +100,7 @@
         rgba($color-green-dark, 0.6),
         rgba($color-green-light, 0.8)
       );
-      /* transition: all .2s; */
+      transition: all .2s;
     }
 
     &:hover {

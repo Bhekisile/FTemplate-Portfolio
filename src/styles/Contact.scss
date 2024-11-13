@@ -23,9 +23,7 @@
   color: $color-text-grey;
 
   @include respond(phone) {
-    /* gap: 0; */
     width: 18rem;
-    /* justify-content: center; */
   }
 }
 
@@ -46,6 +44,11 @@
   background-color: $color-green-dark;
   color: $color-white;
   font-weight: 600;
+
+  &:hover {
+    color: $color-green-light;
+    border: .1rem solid $color-green-light;
+  }
 }
 
 input,
