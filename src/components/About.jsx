@@ -1,4 +1,6 @@
-import Header from "./Header";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
+// import Header from "./Header";
 import '../styles/About.scss';
 import html from '../assets/html.png';
 import css from '../assets/css.png';
@@ -20,7 +22,7 @@ import resume from '../assets/resume.pdf';
 const About = () => {
   return (
     <>
-      <Header />
+      <Navigation />
       <div className="about-container">
         <div className="about-center">
           <h1 className="mt-4">About Me</h1>
@@ -53,6 +55,7 @@ const About = () => {
             </a>
           </div>
       </div>
+      <Footer />
     </>
   )
 }

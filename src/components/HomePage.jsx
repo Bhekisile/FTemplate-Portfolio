@@ -1,12 +1,15 @@
 import "../styles/HomePage.scss";
-import Header from "./Header";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
+// import Header from "./Header";
 import cartoon from "../assets/lady-cartoon.jpeg";
 import { Link } from "react-router-dom";
+// import Navigation from "./Navigation";
 
 function HomePage() {
   return (
     <div className="home-container">
-      <Header />
+          <Navigation />
       <div className="flex-container">
         <div className="flex-left">
           <div className="flex-left__details">
@@ -27,6 +30,7 @@ function HomePage() {
           <img src={cartoon} className="flex-right__picture" alt="Lady cartoon" />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

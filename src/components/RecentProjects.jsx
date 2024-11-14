@@ -1,15 +1,16 @@
-import Header from "./Header";
+// import Header from "./Header";
 import "../styles/RecentProjects.scss";
 import { lazy, Suspense } from "react";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const Projects = lazy(() => 
   import("./Projects"));
 
 const RecentProjects = () => {
-  
   return (
     <div className="project-container">
-      <Header />
+      <Navigation />
       <div className="project-width">
         <h1 className="text-center">Recent Projects</h1>
         <div className="my-4 text-center">Here are some of my recent projects</div>
@@ -17,6 +18,7 @@ const RecentProjects = () => {
             <Projects />
           </Suspense>
       </div>
+      <Footer />
     </div>
   );
 };

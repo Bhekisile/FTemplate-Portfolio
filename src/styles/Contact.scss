@@ -7,6 +7,14 @@
   background-color: $color-grey-light-1;
   margin: 0 10%;
   padding: 2rem;
+
+  @include respond(phone) {
+    margin: 3rem 1rem;
+  }
+
+  @include respond(tab-land) {
+    margin-top: 4rem;
+  }
 }
 
 .contact-center {

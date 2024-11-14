@@ -5,6 +5,7 @@
   width: 100%;
   height: 100vh;
   background-color: $color-black-dark;
+  padding-top: 2rem;
 }
 
 .flex-container {
@@ -12,25 +13,23 @@
   color: $color-white;
   display: flex;
   gap: 4rem;
-  padding: 6rem 10%;
+  padding: 2.5rem 10%;
 
   @include respond(tab-land) {
     gap: 0;
     flex-wrap: wrap;
-    justify-content: center;
   }
   
   @include respond(tab-port) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* padding-left: 2rem; */
-    /* padding-right: 2rem; */
     gap: 0;
   }
 
-  @include respond(phone) {
-    padding-top: 2rem;
+  @include respond(tab-land) {
+    /* height: 100%; */
+    background-color: $color-black-dark;
   }
 }
 
@@ -51,7 +50,6 @@
 
   &__details {
     margin-top: 4rem;
-    /* margin-left: 14rem; */
     margin-right: 4rem;
     width: 28rem;
 
@@ -61,7 +59,7 @@
     }
 
     @include respond(tab-port) {
-      margin: 0;
+      margin: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -77,6 +75,7 @@
     color: $color-text-grey;
     width: 32rem;
     margin-bottom: 2rem;
+    text-align: justify;
 
 
     @include respond(tab-port) {
@@ -89,12 +88,11 @@
     }
 
     @include respond(phone) {
-      width: 22rem;
+      width: 20rem;
     }
   }
 
   &__details-primary{
-    margin-bottom: 1.5rem;
 
   &--main {
     font-size: 1rem;
@@ -123,12 +121,17 @@
     height: 22rem;
     padding-top: .2rem;
     border-radius: 50%;
+    margin-top: 2rem;
 
     @include respond(phone) {
       width: 18rem;
       height: 18rem;
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 .btn--green {
@@ -142,6 +145,11 @@
       width: 15rem;
       height: 3rem;
       margin-top: 1rem;
+    }
+
+    @include respond(tab-land) {
+      display: block;
+      margin: 1rem auto;
     }
 
     &:hover {

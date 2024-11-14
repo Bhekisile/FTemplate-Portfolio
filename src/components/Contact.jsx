@@ -1,4 +1,5 @@
-import Header from './Header';
+import Navigation from './Navigation';
+import Footer from './Footer';
 import { useForm, ValidationError } from '@formspree/react';
 import '../styles/Contact.scss';
 
@@ -15,7 +16,7 @@ function Contact() {
 
   return (
     <div>
-      <Header />
+      <Navigation />
       <div className="contact-container">
         <div className="contact-center">
           <h1>Get in touch</h1>
@@ -66,7 +67,7 @@ function Contact() {
           </button>
         </form>
       </div>
-      
+      <Footer />
     </div>
   )
 }

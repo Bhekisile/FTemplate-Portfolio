@@ -3,52 +3,54 @@ import linkedIn from "../assets/linkedIn.png";
 import twitter from "../assets/twitter.png";
 import github1 from "../assets/github.png";
 import { NavLink } from "react-router-dom";
-// import { useState } from "react";
+import Navigation from "./Navigation";
 
 const Header = () => {
-  // const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className="secondary-nav">
-      <ul className='nav-left'>
-        <li><NavLink to='/' className={({isActive}) => isActive ? "active" : ""} >Home</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/projects'>Recent Work</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
-      </ul>
-      <ul className='nav-right'>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/bhekisile-jozi/"
-            className="social-icon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={linkedIn} className="length social-padding" alt="LinkedIn icon" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://x.com/Bhekisile750473"
-            className="social-icon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={twitter} className="length" alt="Twitter icon" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/Bhekisile"
-            className="social-icon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={github1} className="length social" alt="Github icon" />
-          </a>
-        </li>
-      </ul>
-    </nav>   
+    <>
+      <Navigation className="land" />
+      <nav className="navigation">
+        <ul className='navigation__left'>
+          <li><NavLink to='/' className={({isActive}) => isActive ? "navigation__left--active" : ""}>Home</NavLink></li>
+          <li><NavLink to='/about' className={({isActive}) => isActive ? "navigation__left--active" : ""}>About</NavLink></li>
+          <li><NavLink to='/projects' className={({isActive}) => isActive ? "navigation__left--active" : ""}>Recent Projects</NavLink></li>
+          <li><NavLink to='/contact' className={({isActive}) => isActive ? "navigation__left--active" : ""}>Contact</NavLink></li>
+        </ul>
+        <ul className='navigation__right'>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/bhekisile-jozi/"
+              className="social-icon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedIn} className="navigation__right--length navigation__right--social" alt="LinkedIn icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/Bhekisile750473"
+              className="social-icon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={twitter} className="navigation__right--social" alt="Twitter icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Bhekisile"
+              className="social-icon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={github1} className="navigation__right--length navigation__right--social" alt="Github icon" />
+            </a>
+          </li>
+        </ul>
+      </nav> 
+    </>  
   )
 }
 
