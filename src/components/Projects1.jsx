@@ -1,6 +1,7 @@
 import "../styles/RecentProjects.scss";
 import projectsData from "../assets/projectsData";
 import { useState } from "react";
+import { Card, Col, Row } from "react-bootstrap";
 
 const Projects = () => {
   const [expandedCards, setExpandedCards] = useState(Array(projectsData.length).fill(false));
@@ -15,27 +16,29 @@ const Projects = () => {
 
   return (
     <div className="project-card">
+      <Row className="g-4">
           {projectsData.map((project, index) => (
-          <div key={index} className="card-content">
-            <div className="card-content__single-card">
+          <Col sm={12} md={12} lg={6} xl={6}>
+          <Card key={index} className="card-content">
+            <Card.Text as="div" className="">
               <a
                 href={project.projectUrl}
-                className="card-content__external-link"
+                className="project-card__external-link"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={project.imageUrl} alt={project.projectName} className="card-content__image" />
+                <Card.Img src={project.imageUrl} alt={project.projectName} className="card-content__image" />
               </a>
 
               <div className="card-content__heading">
-                <h2 className="">
+                <Card.Text as="h2" className="">
                   {project.projectName}
-                </h2>
-                <div className="card-content__description">
+                </Card.Text>
+                <Card.Text as="div" className="card-content__description">
                 {expandedCards[index] ? project.projectDescription : `${project.projectDescription.substring(0, 160)}...`}
                 <button className="btn btn-show" onClick={() => toggleExpand(index)}>{expandedCards[index] ? "Show Less" : "Show More"}</button>
-                </div>
-                <div className="card-content__links">
+                </Card.Text>
+                <Card.Text as="div" className="card-content__links">
                   <a
                     href={project.projectUrl}
                     className="card-content__link"
@@ -52,12 +55,14 @@ const Projects = () => {
                   >
                     View source
                   </a>
-                </div>
+                </Card.Text>
               </div>
-            </div>
-          </div>
+            </Card.Text>
+          </Card>
+          </Col>
           ))}
-        </div>
+      </Row>
+    </div>
   )
 }
 
