@@ -1,10 +1,8 @@
 import "../styles/HomePage.scss";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-// import Header from "./Header";
 import cartoon from "../assets/lady-cartoon.jpeg";
 import { Link } from "react-router-dom";
-// import Navigation from "./Navigation";
 
 function HomePage() {
   return (

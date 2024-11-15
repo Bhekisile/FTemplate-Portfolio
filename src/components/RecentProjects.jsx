@@ -1,4 +1,3 @@
-// import Header from "./Header";
 import "../styles/RecentProjects.scss";
 import { lazy, Suspense } from "react";
 import Navigation from "./Navigation";

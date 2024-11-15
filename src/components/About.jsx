@@ -1,6 +1,5 @@
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-// import Header from "./Header";
 import '../styles/About.scss';
 import html from '../assets/html.png';
 import css from '../assets/css.png';
