@@ -1,4 +1,5 @@
-import Header from "./Header";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 import '../styles/About.scss';
 import html from '../assets/html.png';
 import css from '../assets/css.png';
@@ -13,13 +14,14 @@ import ruby from '../assets/ruby.png';
 import rails from '../assets/rails.png';
 import tailwind from '../assets/tailwind.png';
 import bootstrap from '../assets/bootstrap.png';
+import resume from '../assets/resume.pdf';
 
 
 
 const About = () => {
   return (
     <>
-      <Header />
+      <Navigation />
       <div className="about-container">
         <div className="about-center">
           <h1 className="mt-4">About Me</h1>
@@ -45,9 +47,14 @@ const About = () => {
           <li><img src={bootstrap} alt="Bootstrap icon" /> Bootstrap</li>
         </ul>
           <div className="about-resume">
-            <button type="button" className="btn btn--green">Download my resume</button>
+            <a href={resume} download>
+              <button type="button" className="btn btn--green">
+                Download my resume
+              </button>
+            </a>
           </div>
       </div>
+      <Footer />
     </>
   )
 }

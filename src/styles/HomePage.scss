@@ -1,40 +1,101 @@
-@import "../styles/variables.scss";
+@import "../styles/abstracts/variables.scss";
+@import "../styles/abstracts/mixins.scss";
 
 .home-container {
   width: 100%;
+  height: 100vh;
   background-color: $color-black-dark;
 }
 
 .flex-container {
+  background-color: $color-black-dark;
   color: $color-white;
   display: flex;
   gap: 4rem;
-  height: 89vh;
-  padding-top: 6rem;
+  padding: 2rem 10%;
+  margin-bottom: 3rem;
+
+  @include respond(tab-land) {
+    gap: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-bottom: -4.5rem;
+  }
+  
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  @include respond(tab-land) {
+    background-color: $color-black-dark;
+  }
 }
 
 .flex-left {
   width: 35rem;
   height: 25rem;
   flex-basis: 60%;
-  /* border: .1rem solid $color-white; */
-}
+  padding-left: 0;
 
-.details {
-  margin-top: 4rem;
-  margin-left: 14rem;
-  margin-right: 4rem;
-  width: 38rem;
-  /* border: .1rem solid $color-white; */
-}
+  @include respond(tab-land) {
+    flex-basis: 40%;
+    height: 18rem;
+  }
 
-.flex-right {
-  padding-right: 3.5rem;
-  flex-basis: 33.33%;
-}
+  @include respond(phone) {
+    height: 22rem;
+  }
 
-.details-primary {
-  margin-bottom: 1.5rem;
+  &__details {
+    margin-top: 4rem;
+    margin-right: 4rem;
+    width: 28rem;
+
+    @include respond(tab-land) {
+      margin: 2rem;
+    }
+
+    @include respond(tab-port) {
+      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+    }
+
+    @include respond(phone) {
+      width: 20rem;
+    }
+  }
+
+  & p {
+    color: $color-text-grey;
+    width: 32rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+
+
+    @include respond(tab-port) {
+      font-size: .9rem;
+      width: 30rem;
+    }
+
+    @include respond(tab-land) {
+      width: 28rem;
+      margin-top: .312rem;
+    }
+
+    @include respond(phone) {
+      width: 20rem;
+    }
+  }
+
+  &__details-primary{
 
   &--main {
     font-size: 1rem;
@@ -46,11 +107,35 @@
     font-size: 2rem;
     font-weight: 400;
   }
+  }
 }
 
-p {
-  color: $color-text-grey;
-  margin-bottom: 2.5rem;
+.flex-right {
+  padding-right: 3.5rem;
+  flex-basis: 33.33%;
+
+  @include respond(tab-land) {
+    flex-basis: 23%;
+    padding-right: 0;
+    margin-bottom: 5rem;
+  }
+
+  &__picture {
+    width: 22rem;
+    height: 22rem;
+    padding-top: .2rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+
+    @include respond(phone) {
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 .btn--green {
@@ -59,13 +144,20 @@ p {
     background-color: $color-green-dark;
     color: $color-white;
     font-weight: 600;
+
+    @include respond(phone) {
+      width: 15rem;
+      height: 3rem;
+      margin-top: 1rem;
+    }
+
+    @include respond(tab-land) {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      border: .1rem solid $color-green-dark;
+      color: $color-green-dark;
+    }
   }
-
-  .picture {
-    width: 22rem;
-    height: 22rem;
-    padding-top: .2rem;
-    border-radius: 50%;
-  }
-
-

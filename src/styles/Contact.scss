@@ -1,11 +1,21 @@
-@import "../styles/variables.scss";
+@import "../styles/abstracts/variables.scss";
+@import "../styles/abstracts/mixins.scss";
 
 .contact-container {
   width: 80%;
   height: 90vh;
   background-color: $color-grey-light-1;
-  margin: 0 10%;
+  margin: 1rem 10% 3rem 10%;
   padding: 2rem;
+
+  @include respond(phone) {
+    margin: 3rem 1rem;
+  }
+
+  @include respond(tab-land) {
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+  }
 }
 
 .contact-center {
@@ -20,6 +30,10 @@
   flex-direction: column;
   margin: 0 auto;
   color: $color-text-grey;
+
+  @include respond(phone) {
+    width: 18rem;
+  }
 }
 
 .form-group {
@@ -39,4 +53,9 @@
   background-color: $color-green-dark;
   color: $color-white;
   font-weight: 600;
+
+  &:hover {
+    color: $color-green-light;
+    border: .1rem solid $color-green-light;
+  }
 }
