@@ -3,9 +3,9 @@ import linkedIn from "../assets/linkedIn.png";
 import twitter from "../assets/twitter.png";
 import github1 from "../assets/github.png";
 
-const Footer = () => {
+function Footer () {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer__left">&copy; B Jozi 2024</div>
       <ul className='footer__right'>
           <li>
@@ -39,7 +39,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-    </div>
+    </footer>
   )
 }
 

@@ -5,7 +5,7 @@
   width: 80%;
   height: 90vh;
   background-color: $color-grey-light-1;
-  margin: 0 10%;
+  margin: 1rem 10% 3rem 10%;
   padding: 2rem;
 
   @include respond(phone) {
@@ -13,7 +13,8 @@
   }
 
   @include respond(tab-land) {
-    margin-top: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -32,6 +33,7 @@
 
   @include respond(phone) {
     width: 18rem;
+    /* margin-bottom: 4rem; */
   }
 }
 
@@ -53,13 +55,12 @@
   color: $color-white;
   font-weight: 600;
 
+  /* @include respond(phone) {
+    margin-bottom: 4.5rem;
+  } */
+
   &:hover {
     color: $color-green-light;
     border: .1rem solid $color-green-light;
   }
-}
-
-input,
-textarea {
-
 }
