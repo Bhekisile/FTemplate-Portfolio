@@ -7,7 +7,7 @@ const Navigation = () => {
     <div className="logo">
       <li className="logo__white">BJ</li>
     </div>
-    <nav className="navigation">
+    <div className="navigation">
       <input type="checkbox" className="navigation__checkbox" id="navi-toggle"></input>
 
       <label htmlFor="navi-toggle" className="navigation__button">
@@ -23,7 +23,7 @@ const Navigation = () => {
           <li className="navigation__item"><NavLink to='/contact' className="navigation__link">Contact</NavLink></li>
         </ul>
       </nav> 
-    </nav>
+    </div>
     </>
   )
 }
