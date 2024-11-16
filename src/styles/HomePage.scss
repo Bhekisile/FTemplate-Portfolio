@@ -12,7 +12,7 @@
   color: $color-white;
   display: flex;
   gap: 4rem;
-  padding: 2rem 10%;
+  padding: 3.2rem 10%;
   margin-bottom: 3rem;
 
   @include respond(tab-land) {
@@ -21,7 +21,7 @@
     justify-content: center;
     margin-bottom: 0;
     padding-top: 0;
-    margin-bottom: -4.5rem;
+    margin-bottom: -5rem;
   }
   
   @include respond(tab-port) {
@@ -100,6 +100,7 @@
   &--main {
     font-size: 1rem;
     font-weight: 600;
+    color: $color-text-grey;
   }
 
   &--sub {
