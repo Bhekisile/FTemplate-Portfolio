@@ -9,12 +9,47 @@
   padding: 2rem;
 
   @include respond(phone) {
-    margin: 3rem 1rem;
+    margin: 3rem auto;
+    padding: 1rem;
   }
 
   @include respond(tab-land) {
     margin-top: 1rem;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.contact-thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 2rem;
+  background-color: $color-green-dark;
+  padding: 2rem;
+  border-radius: 6rem;
+  
+  & p {
+    color: $color-white;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  &__btn {
+    height: 3rem;
+    width: 10rem;
+    background-color: $color-white;
+    color: $color-green-dark;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    transition: all .2s;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-black-light;
+    border: .1rem solid $color-white;
+    transform: translateY(-0.2rem);
+  }
   }
 }
 

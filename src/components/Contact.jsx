@@ -2,15 +2,20 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import { useForm, ValidationError } from '@formspree/react';
 import '../styles/Contact.scss';
+import { NavLink } from 'react-router-dom';
 
 function Contact() {
   const [state, handleSubmit] = useForm('mpznvgqj');
   
   if (state.succeeded) {
-    document.getElementById('contact-form').reset();
+      document.getElementById('contact-form')?.reset();
     return (
-      <p>Thank you for signing up!</p>,
-      <button type='button' btn btn--small-green>Return</button>
+      <div className="contact-thankyou">
+        <p>Thank you for reaching out!</p>
+        <NavLink to='/'>
+          <button type='button' className="contact-thankyou__btn" >Return</button>
+        </NavLink>
+      </div>
     );
   }
 

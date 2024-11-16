@@ -24,7 +24,8 @@
 # 📖 [Portfolio React] <a name="about-project"></a>
 
 
-**[My Portfolio]** is a website built with JavaScript library, React and styled with Sass css preprocessor. It consists of four sections: Home, About me, which is all about the experience I gain throughout the course and skills. In projects section you'll get to know some of my projects I recently created, and the last section is contacts details. 
+**[My Portfolio]** 
+The JavaScript library, React, and the Sass CSS preprocessor built this Portfolio website. The website is divided into four sections: Home, About Me, which highlights the experience I've gained throughout the course, and Skills. The projects section showcases some of my recent creations, while the final section contains my contact details. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
