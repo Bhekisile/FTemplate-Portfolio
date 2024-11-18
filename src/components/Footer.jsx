@@ -6,7 +6,7 @@ import github1 from "../assets/github.png";
 function Footer () {
   return (
     <footer className="footer">
-      <div className="footer__left">&copy; B Jozi 2024</div>
+      <div className="footer__left">Copyright &copy; B Jozi</div>
       <ul className='footer__right'>
           <li>
             <a

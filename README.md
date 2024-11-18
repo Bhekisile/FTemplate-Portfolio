@@ -24,8 +24,7 @@
 # 📖 [Portfolio React] <a name="about-project"></a>
 
 
-**[My Portfolio]** 
-The JavaScript library, React, and the Sass CSS preprocessor built this Portfolio website. The website is divided into four sections: Home, About Me, which highlights the experience I've gained throughout the course, and Skills. The projects section showcases some of my recent creations, while the final section contains my contact details. 
+The JavaScript library, React, and the Sass CSS preprocessor built **[My Portfolio]**. The website is divided into four sections: Home, About Me, which highlights the experience I've gained throughout the course, and Skills. The projects section showcases some of my recent creations, while the final section contains my contact details. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -118,8 +117,8 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+I would like to express my gratitude to everyone who contributed to the development knowledge I currently possess from Microverse, the Udemy instructors for the courses I completed, and all my colleagues who also made contributions.
 
-I would like to thank everyone who contributed to the development knowledge I have today from Microverse, to Udemy instructors for the courses I took, and to all my colleaugues who contributed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

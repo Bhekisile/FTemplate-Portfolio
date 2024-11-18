@@ -7,13 +7,6 @@ const projectsData = [
     linkSource: 'https://github.com/Bhekisile/proshop',
   },
   {
-    projectName: 'Workout App',
-    projectDescription: 'Built with Ruby on Rails, Bootstrap CSS, d3.js, and Rails Action Cable. The app is created for users who enjoy tracking their physical activities. The app allows a user to record an activity type, duration, and date. Every time the user enters data, a chart updates. The user can create friendships and start following and chatting with each other.',
-    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097095/Exercise-rails_oh7bdu.png',
-    projectUrl: 'https://metricsstock.netlify.app/',
-    linkSource: 'https://github.com/Bhekisile/Workout-app',
-  },
-  {
     projectName: 'Recipe App',
     projectDescription: 'The project is built with Ruby on Rails, a PostgreSQL database, and Bootstrap for styling. It is about keeping track of all recipes and ingredients for the users. The users can save ingredients, keep track of what they have and create recipes, generate a shopping list based on what they have, and record the missing gradients. Also, since sharing recipes is an important part of cooking, the recipes can be made public so anyone can access them.',
     imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097095/recipeApp_vjmham.png',
@@ -34,6 +27,13 @@ const projectsData = [
     imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097523/complexApp_erfaia.png',
     projectUrl: 'https://jscoursecomplex-app.onrender.com',
     linkSource: 'https://github.com/Bhekisile/Complex-app',
+  },
+  {
+    projectName: 'Fictional University',
+    projectDescription: 'The project is built on WordPress sites, utilizing technologies like PHP, JavaScript, HTML, and CSS. The project involves the coding of unique block types for the Gutenberg Block Editor, the creation of unique themes, and the creation of plugins to enhance the functionality of WordPress. The project includes features such as upcoming events, blogs, leaving notes for yourself, following and liking the lecturers. Only registered students can interact with others.',
+    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731924734/fictionalUni_db4jf5.png',
+    projectUrl: 'http://fictional-university.local/',
+    linkSource: 'https://github.com/Bhekisile/Fictional-University',
   },
   {
     projectName: 'Natours',
