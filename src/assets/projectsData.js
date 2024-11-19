@@ -1,17 +1,10 @@
 const projectsData = [
   {
     projectName: 'ProShop',
-    projectDescription: 'An e-commerce website built with MERN stack. It is an end-to-end application with a seamless user experience and interactions. The customers can search for the product and purchase it online. The admin manages the application and has CRUD permission. It authorizes and authenticates users, allowing them to place an order after authentication and have access to their own account.',
-    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097095/proshop_nxlyno.png',
+    projectDescription: 'This is an e-commerce platform I built throughout the course using React, Redux, Node, Express, and MongoDB. I had the opportunity to work with JWT authentication, a PayPal payment gateway, an admin area for managing customers, products, and orders, as well as features such as product ratings, reviews, search, carousel, pagination, and an image gallery. It is a seamless user experience and interactions with high web performance that online customers will enjoy.',
+    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1732001320/proshopGallery_cmhflv.png',
     projectUrl: 'https://proshop-q9dt.onrender.com/',
     linkSource: 'https://github.com/Bhekisile/proshop',
-  },
-  {
-    projectName: 'Workout App',
-    projectDescription: 'Built with Ruby on Rails, Bootstrap CSS, d3.js, and Rails Action Cable. The app is created for users who enjoy tracking their physical activities. The app allows a user to record an activity type, duration, and date. Every time the user enters data, a chart updates. The user can create friendships and start following and chatting with each other.',
-    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097095/Exercise-rails_oh7bdu.png',
-    projectUrl: 'https://metricsstock.netlify.app/',
-    linkSource: 'https://github.com/Bhekisile/Workout-app',
   },
   {
     projectName: 'Recipe App',
@@ -36,10 +29,17 @@ const projectsData = [
     linkSource: 'https://github.com/Bhekisile/Complex-app',
   },
   {
+    projectName: 'Fictional University',
+    projectDescription: 'The project is built on WordPress sites, utilizing technologies like PHP, JavaScript, HTML, and CSS. The project involves the coding of unique block types for the Gutenberg Block Editor, the creation of unique themes, and the creation of plugins to enhance the functionality of WordPress. The project includes features such as upcoming events, blogs, leaving notes for yourself, following and liking the lecturers. Only registered students can interact with others.',
+    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731924734/fictionalUni_db4jf5.png',
+    projectUrl: 'https://fictional-university.local/',
+    linkSource: 'https://github.com/Bhekisile/Fictional-University',
+  },
+  {
     projectName: 'Natours',
     projectDescription: 'The project leverages the advanced knowledge of styling using CSS and Sass. The application showcases the power of HTML and CSS in enhancing its visual appeal. The project features responsive layouts such as grid and flexbox, animations, image layouts, and pure CSS popups.',
     imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097096/Natours_ihkl44.png',
-    projectUrl: 'https://github.com/Bhekisile/Natours',
+    projectUrl: 'https://bhekisile.github.io/Natours/',
     linkSource: 'https://github.com/Bhekisile/Natours',
   }
 ];

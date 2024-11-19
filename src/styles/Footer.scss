@@ -35,6 +35,10 @@
     list-style: none;
     width: 7rem;
     padding-left: 0;
+
+    @include respond(phone) {
+      margin-bottom: 0;
+    }
     
     &--length {
       padding-bottom: .1rem;
