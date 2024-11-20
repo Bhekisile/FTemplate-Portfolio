@@ -12,3 +12,30 @@
     @media (min-width: 112.5em) { @content }
   }
 }
+
+@mixin greenButton {
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+  width: 19rem;
+  height: 4rem;
+  background-color: $color-green-dark;
+  color: $color-white;
+  font-weight: 600;
+  border: none;
+  border-radius: .5rem;
+
+  @include respond(phone) {
+    display: none;
+    opacity: 0;
+    width: 15rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+
+  @include respond(tab-land) {
+    display: block;
+    margin: 0 auto;
+  }
+}
