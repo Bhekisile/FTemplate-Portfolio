@@ -29,11 +29,11 @@ const projectsData = [
     linkSource: 'https://github.com/Bhekisile/Complex-app',
   },
   {
-    projectName: 'Fictional University',
-    projectDescription: 'The project is built on WordPress sites, utilizing technologies like PHP, JavaScript, HTML, and CSS. The project involves the coding of unique block types for the Gutenberg Block Editor, the creation of unique themes, and the creation of plugins to enhance the functionality of WordPress. The project includes features such as upcoming events, blogs, leaving notes for yourself, following and liking the lecturers. Only registered students can interact with others.',
-    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731924734/fictionalUni_db4jf5.png',
-    projectUrl: 'https://fictional-university.local/',
-    linkSource: 'https://github.com/Bhekisile/Fictional-University',
+    projectName: 'Stock Screener',
+    projectDescription: 'This project is a dynamic metrics website developed using React, Redux Toolkit, and CSS to provide a user-friendly interface for tracking company stock data. The application fetches real-time data from the Financial Modeling Prep API via a RESTful API, and stores the data in the Redux store for efficient state management. The application is tested using Jest, ensuring all features function as expected and providing a robust user experience. Users can filter companies by name, allowing for seamless navigation and quick data retrieval.',
+    imageUrl: 'https://github.com/Bhekisile/Portfolio-React/blob/logo-spin/src/assets/stockScreener.png?raw=true',
+    projectUrl: 'https://metricsstock.netlify.app/',
+    linkSource: 'https://github.com/Bhekisile/Metrics-webapp',
   },
   {
     projectName: 'Natours',

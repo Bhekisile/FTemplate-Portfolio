@@ -2,6 +2,7 @@ import "../styles/RecentProjects.scss";
 import { lazy, Suspense } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+// import Projects from "./Projects";
 
 const Projects = lazy(() => 
   import("./Projects"));
