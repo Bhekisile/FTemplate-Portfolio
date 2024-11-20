@@ -118,6 +118,10 @@
   &__btn--green {
     @include greenButton;
 
+    @include respond(phone) {
+      opacity: 0;
+    }
+
     &:hover {
       background-color: $color-black-light;
       border: 2px solid $color-green-dark;

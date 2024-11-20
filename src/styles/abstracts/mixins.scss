@@ -27,8 +27,6 @@
   border-radius: .5rem;
 
   @include respond(phone) {
-    display: none;
-    opacity: 0;
     width: 15rem;
     height: 3rem;
     margin-top: 1rem;

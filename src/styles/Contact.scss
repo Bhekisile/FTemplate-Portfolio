@@ -7,10 +7,11 @@
   background-color: $color-grey-light-1;
   margin: 1rem 10% 3rem 10%;
   padding: 2rem;
-
+  
   @include respond(phone) {
     margin: 3rem auto;
     padding: 1rem;
+    overflow-x: hidden;
   }
 
   @include respond(tab-land) {
@@ -67,7 +68,7 @@
   color: $color-text-grey;
 
   @include respond(phone) {
-    width: 18rem;
+    width: auto;
   }
 }
 
