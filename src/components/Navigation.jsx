@@ -1,11 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/Navigation.scss";
 
 const Navigation = () => {
   return (
     <div className="container-fluid container">
-      <div className="logo">
-        <NavLink to="/"><li className="logo__white">BJ</li></NavLink>
+      <div className="container__logo">
+        <Link to="/"><li className="container__logo--green">BJ</li></Link>
       </div>
       <div className="navigation">
         <input type="checkbox" className="navigation__checkbox" id="navi-toggle"></input>
@@ -17,10 +17,10 @@ const Navigation = () => {
 
         <nav className="navigation__nav">
           <ul className="navigation__list">
-            <li className="navigation__item"><NavLink to='/' className="navigation__link">Home</NavLink></li>
-            <li className="navigation__item"><NavLink to='/about' className="navigation__link">About</NavLink></li>
-            <li className="navigation__item"><NavLink to='/projects' className="navigation__link">Recent Projects</NavLink></li>
-            <li className="navigation__item"><NavLink to='/contact' className="navigation__link">Contact</NavLink></li>
+            <li className="navigation__item"><Link to='/' className="navigation__link">Home</Link></li>
+            <li className="navigation__item"><Link to='/about' className="navigation__link">About</Link></li>
+            <li className="navigation__item"><Link to='/projects' className="navigation__link">Recent Projects</Link></li>
+            <li className="navigation__item"><Link to='/contact' className="navigation__link">Contact</Link></li>
           </ul>
         </nav> 
       </div>
