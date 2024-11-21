@@ -3,14 +3,20 @@
 
 .project-container {
   width: 100vw;
-  height: 100%;
+  max-width: 100%;
+  min-height: 100vh;
   background-color: $color-black-dark;
   color: $color-white;
-  overflow-x: hidden;
+  padding-bottom: 7rem;
+  /* margin-bottom: 2rem; */
 
   @include respond(phone) {
     overflow-x: hidden;
   }
+
+  @include respond(tab-land) {
+    /* height: 100%; */
+  }  
 }
 
 .project-width {
@@ -39,17 +45,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 4rem auto;
 
   @include respond(tab-land) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin-bottom: 6.25rem; */
   }
 }
 
 .card-content {
-  width: 44.5%;
+  width: 44%;
   padding-right: 0;
   margin-bottom: 2rem;
 
@@ -74,7 +81,7 @@
 
   &__image {
     height: 17rem;
-    width: 32.5rem;
+    width: 32.9rem;
     margin-bottom: 4rem;
     position: cover;
     background-position: top;

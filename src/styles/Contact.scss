@@ -3,10 +3,11 @@
 
 .contact-container {
   width: 80%;
-  height: 90vh;
+  min-height: 100vh;
   background-color: $color-grey-light-1;
   margin: 1rem 10% 3rem 10%;
   padding: 2rem;
+  overflow-x: hidden;
   
   @include respond(phone) {
     margin: 3rem auto;
@@ -69,6 +70,10 @@
 
   @include respond(phone) {
     width: auto;
+  }
+
+  @include respond(tab-land) {
+    margin-bottom: 6.25rem;
   }
 }
 
