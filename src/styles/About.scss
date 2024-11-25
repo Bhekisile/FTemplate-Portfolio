@@ -2,6 +2,15 @@
 @import "../styles/abstracts/mixins.scss";
 
 .about-container {
+  background-image: 
+  linear-gradient(
+    to right,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%,
+  ),
+    url('../assets/portfolio bgcover.jpg');
+  background-size: cover;
+
   width: 80%;
   background-color: $color-grey-light-1;
   margin: 2rem 10% 5rem 10%;
@@ -59,7 +68,7 @@ p {
   margin: 0 auto;
   padding: 1rem;
   list-style: none;
-  box-shadow: 0 1.5rem 4rem rgba($color-black-dark, 0.15);
+  /* box-shadow: 0 1.5rem 4rem rgba($color-black-dark, 0.15); */
 
   @include respond(tab-land) {
     width: 40.5rem;
