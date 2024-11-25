@@ -11,7 +11,7 @@
     url('../assets/portfolio bgcover.jpg');
   background-size: cover;
   width: 80%;
-  box-radius: 1rem;
+  border-radius: 1rem;
   min-height: 100vh;
   margin: 1rem 10% 3rem 10%;
   padding: 2rem;
@@ -67,11 +67,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  & p {
-    /* font-weight: 600; */
-    /* color: $color-green-dark; */
-  }
 }
 
 #contact-form {
@@ -100,7 +95,7 @@
 
   & input,
   & textarea {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem .5rem;
     border-radius: 2px;
     background-color: rgba($color-white, .6);
     border: none;
@@ -111,7 +106,6 @@
       outline: none;
       border-bottom: 3px solid $color-green-dark;
       box-shadow: 0 1rem 2rem rgba($color-black-dark, .1);
-      /* border-bottom: 3px solid $color-primary; */
     }
   }
 }
