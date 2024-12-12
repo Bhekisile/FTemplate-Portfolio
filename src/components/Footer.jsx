@@ -1,7 +1,4 @@
 import "../styles/Footer.scss";
-// import linkedIn from "../assets/linkedIn.png";
-import twitter from "../assets/twitter.png";
-import github1 from "../assets/github.png";
 
 function Footer() {
   return (
