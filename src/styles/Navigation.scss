@@ -8,7 +8,7 @@
   margin: 0 10%;
 
   @include respond(phone) {
-    margin: 0 5%;
+    margin: 0;
   }
 
   &__logo {
