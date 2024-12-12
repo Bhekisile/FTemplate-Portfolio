@@ -120,6 +120,7 @@
 
     @include respond(phone) {
       /* opacity: 0; */
+      margin: 2rem auto;
     }
 
     &:hover {
@@ -151,8 +152,8 @@
       margin-top: 2rem;
   
       @include respond(phone) {
-        width: 18rem;
-        height: 18rem;
+        width: 15rem;
+        height: 15rem;
       }
     }
   }
