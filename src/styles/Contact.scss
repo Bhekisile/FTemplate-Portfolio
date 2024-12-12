@@ -12,15 +12,15 @@
   background-size: cover;
   width: 80%;
   border-radius: 1rem;
-  min-height: 100vh;
+  height: 100%;
   margin: 1rem 10% 3rem 10%;
-  padding: 2rem;
+  padding: 6rem;
   overflow-x: hidden;
+  overflow-y: hidden;
   
   @include respond(phone) {
     margin: 3rem auto;
     padding: 1rem;
-    overflow-x: hidden;
   }
 
   @include respond(tab-land) {
@@ -78,6 +78,7 @@
 
   @include respond(phone) {
     width: auto;
+    margin-bottom: 0;
   }
 
   @include respond(tab-land) {
@@ -116,6 +117,7 @@
 
 .btn-form {
   height: 3rem;
+  width: 90%;
   background-color: $color-green-dark;
   color: $color-white;
   font-weight: 600;

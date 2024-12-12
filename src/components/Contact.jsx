@@ -20,7 +20,7 @@ function Contact() {
   }
 
   return (
-    <div>
+    <>
       <Navigation />
       <div className="contact-container">
         <div className="contact-center">
@@ -73,7 +73,7 @@ function Contact() {
         </form>
       </div>
       <Footer />
-    </div>
+    </>
   )
 }
 
