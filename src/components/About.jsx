@@ -25,7 +25,7 @@ const About = () => {
       <div className="about-container">
         <div className="about-center">
           <h1 className="mt-4">About Me</h1>
-          <p>Full-Stack Web Developer, building dynamic and responsive websites since last 2+ years. Focus on delivering high-quality, maintanable and scalable code that meet business needs</p>
+          <p>Full-Stack Web Developer, building dynamic and responsive websites since last 2+ years. Focus on delivering high-quality, maintainable and scalable code that meet business needs</p>
         </div>
         <div className="about-skills ">
           <h2>Skills</h2>
