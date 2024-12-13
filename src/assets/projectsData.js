@@ -30,17 +30,17 @@ const projectsData = [
   },
   {
     projectName: 'Stock Screener',
-    projectDescription: 'This project is a dynamic metrics website developed using React, Redux Toolkit, and CSS to provide a user-friendly interface for tracking company stock data. The application fetches real-time data from the Financial Modeling Prep API via a RESTful API, and stores the data in the Redux store for efficient state management. The application is tested using Jest, ensuring all features function as expected and providing a robust user experience. Users can filter companies by name, allowing for seamless navigation and quick data retrieval.',
+    projectDescription: 'The project is a dynamic metrics website developed using React, Redux Toolkit, and CSS to provide a user-friendly interface for tracking company stock data. The application fetches real-time data from the Financial Modeling Prep API via a RESTful API, and stores the data in the Redux store for efficient state management. The application is tested using Jest, ensuring all features function as expected and providing a robust user experience. Users can filter companies by name, allowing for seamless navigation and quick data retrieval.',
     imageUrl: 'https://github.com/Bhekisile/Portfolio-React/blob/logo-spin/src/assets/stockScreener.png?raw=true',
     projectUrl: 'https://metricsstock.netlify.app/',
     linkSource: 'https://github.com/Bhekisile/Metrics-webapp',
   },
   {
-    projectName: 'Natours',
-    projectDescription: 'The project leverages the advanced knowledge of styling using CSS and Sass. The application showcases the power of HTML and CSS in enhancing its visual appeal. The project features responsive layouts such as grid and flexbox, animations, image layouts, and pure CSS popups.',
-    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097096/Natours_ihkl44.png',
-    projectUrl: 'https://bhekisile.github.io/Natours/',
-    linkSource: 'https://github.com/Bhekisile/Natours',
+    projectName: 'Nexter',
+    projectDescription: 'The project is all about learning the grid layout in depth. It showcases the knowledge of how to position grid items, name the grid lines and areas, and align grid items and tracks. The minmax function assists in implementing responsive layouts that use auto-fill and auto-fit. The construction of grid template columns and rows using auto, min-, and max-content also involves the use of HTML and a Sass preprocessor. Throughout this course, I utilized Sass variables, functions, and mixins, which simplify the styling of the application, eliminate the need for dry code, and enable quick changes to style properties.',
+    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1734074028/nexter_aivee9.png',
+    projectUrl: 'https://bhekisile.github.io/Nexter/',
+    linkSource: 'https://github.com/Bhekisile/Nexter',
   }
 ];
 
