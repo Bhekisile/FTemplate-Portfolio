@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 
 const Projects = lazy(() => 
-  import("./Projects"));
+  import("./Projects1"));
 
 const RecentProjects = () => {
   return (

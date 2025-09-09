@@ -6,7 +6,7 @@
   max-width: 100%;
   min-height: 100vh;
   background-color: $color-black-dark;
-  color: $color-white;
+  color: $color-text-grey;
   padding-bottom: 7rem;
   overflow-x: hidden; 
 }
@@ -32,97 +32,170 @@
   }
 }
 
-.project-card {
+.project-card1 {
   background-color: $color-black-dark;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 4rem auto;
+  margin-top: 2rem;
 
-  @include respond(tab-land) {
+  &__first-row {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-  }
-}
+    justify-content: space-between;
 
-.card-content {
-  width: 44%;
-  padding-right: 0;
-  margin-bottom: 2rem;
-
-  @include respond(tab-land) {
-    width: 32.5rem;
-  }
-
-  @include respond(phone) {
-    margin: 0 auto;
-  }
-
-  &__single-card {
-    @include respond(phone) {
-      text-align: center;
-    }
-  }
-
-  &__external-link {
-    margin-bottom: 0;
-    height: 17rem;
-  }
-
-  &__image {
-    height: 17rem;
-    width: 32.9rem;
-    margin-bottom: 4rem;
-    border-radius: 3px;
-    position: cover;
-    background-position: top;
-
-    @include respond(phone) {
-      width: 20.5rem;
-      height: 12rem;
-    }
-  }
-
-  &__heading {
-
-    @include respond(phone) {
+    @include respond(tab-port) {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-  }
-
-  &__description {
-    width: 99%;
-    text-align: justify;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    @include respond(phone) {
-      width: 20.5rem;
-    }
-  }
-
-  &__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: $color-white;
-
-    @include respond(phone) {
-      width: 20.5rem;
+      width: 100%;
+      margin: 0 auto;
     }
 
-    &__link {
-      padding-top: 2rem;
-    }
-  }
+    &--first-col {
+      width: 35%;
 
-  & a {
+      @include respond(tab-port) {
+        width: 50%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &--second-col {
+      width: 50%;
+
+      @include respond(tab-port) {
+        width: 90%;
+        text-align: center;
+      }
+    }
+
+    &--description {
+      margin-top: 1rem;
+      text-align: justify;
+
+      @include respond(phone) {
+        margin: 0 auto;
+      }
+    }
+
+    &__external-link {
+      margin-bottom: 0;
+      height: 17rem;
+    }
+
+    &--image {
+      width: 30%;
+      border-radius: 10px;
+
+      &--right {
+        transform: skew(-10deg, 10deg);
+      }
+    }
+
+    & a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-white;
+        padding-top: .4rem;
+        height: 2.3rem;
+        width: 9rem;
+        font-size: 0.9rem;
+        background-image: linear-gradient(
+          to right,
+          rgba($color-green-dark, 0.6),
+          rgba($color-green-light, 0.8)
+        );
+        transition: all .2s;
+      }
+
+      &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black-dark, 0.15);
+        transform: translateY(-0.2rem);
+        backface-visibility: hidden;
+      }
+    }
+
+    &--links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin: 2rem auto;
+      color: $color-white;
+
+      &--link {
+        padding-top: 2rem;
+      }
+    }
+  } 
+}
+
+.card-content1 {
+  margin-top: 4rem;
+
+    &__single-card1 {
+      display: flex;  
+      align-items: center;
+
+      @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &--left {
+        width: 50%;
+        padding: 1rem;
+
+        @include respond(tab-port) {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      &--right {
+        width: 50%;
+        padding: 1rem;
+
+        @include respond(tab-port) {
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+    }
+
+    &__image1 {
+      width: 60%;
+      border-radius: 10px;
+      border: 1px solid red;
+
+      @include respond(tab-port) {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &__description {
+      text-align: justify;
+    }
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color: $color-white;
+
+      &__link {
+        padding-top: 2rem;
+      }
+    }
+
+   & a {
     &:link,
     &:visited {
       text-decoration: none;
@@ -153,7 +226,7 @@
   border: 1px solid $color-green-dark;
 
   &:hover {
-  color: $color-green-dark;
-  background-color: transparent;
-}
+    color: $color-green-dark;
+    background-color: transparent;
+  }
 }
