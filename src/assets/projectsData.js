@@ -7,14 +7,6 @@ const projectsData = [
     linkSource: 'https://github.com/Bhekisile/proshop',
   },
   {
-    projectName: 'Recipe App',
-    projectDescription: 'The project is built with Ruby on Rails, a PostgreSQL database, and Bootstrap for styling. It is about keeping track of all recipes and ingredients for the users. The users can save ingredients, keep track of what they have and create recipes, generate a shopping list based on what they have, and record the missing gradients. Also, since sharing recipes is an important part of cooking, the recipes can be made public so anyone can access them.',
-    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097095/recipeApp_vjmham.png',
-    projectUrl: 'https://recipe-app-8lwd.onrender.com',
-    linkSource: 'https://github.com/Bhekisile/Recipe-app',
-  },
-  
-  {
     projectName: 'Space Travelers app',
     projectDescription: 'Space Travelers Hub is built with React, CSS, and Jest for the tests. It is a web application designed to assist users in managing their rocket and mission reservations for space travel. The application aims to provide a platform where users can easily book and keep track of their reserved rockets and missions. Additionally, it offers a profile page feature where users can view the details of their reserved rockets and missions. This kind of application could be useful for space enthusiasts, scientists, or anyone interested in space travel.',
     imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097524/spaceHub_z7ykkp.png',

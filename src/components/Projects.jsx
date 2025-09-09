@@ -26,7 +26,6 @@ const Projects = () => {
               >
                 <img src={project.imageUrl} alt={project.projectName} className="card-content__image" />
               </a>
-
               <div className="card-content__heading">
                 <h2 className="">
                   {project.projectName}
