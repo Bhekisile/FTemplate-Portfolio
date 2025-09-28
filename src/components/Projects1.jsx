@@ -6,7 +6,7 @@ const Projects1 = () => {
 
 	return (
 		<div className="project-card1">
-			<motion.div	
+			<motion.div
 				initial={{ opacity: 0, scale: 0 }}
 				whileInView={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.7 }}

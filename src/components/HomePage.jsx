@@ -11,32 +11,32 @@ function HomePage() {
   return (
     <div className="home-container">
       <Navigation />
-      <motion.div	
-				initial={{ opacity: 0, scale: 0 }}
-				whileInView={{ opacity: 1, scale: 1 }}
-				transition={{ duration: 0.7 }} 
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7 }}
         className="flex"
       >
         <div className="flex__left">
           <div className="flex__left--details">
             <h1 className="flex__left--details-primary">
-              <span className="flex__left--details-primary-main">Hello, I'm </span> 
+              <span className="flex__left--details-primary-main">Hello, I'm </span>
               <span className="flex__left--details-primary-sub">Bhekisile Jozi</span>
             </h1>
             <p>I can help you build a website. Look through some of my work and experience! If you like what you see and have a project you need coded,
               don&apos;t hesitate to contact me.</p>
-              <button type="button" 
-                onClick={() => {
-                  navigate("/about");
-                }} 
-                className="flex__btn flex__btn--green">
-                   Know more about me
-              </button>
+            <button type="button"
+              onClick={() => {
+                navigate("/about");
+              }}
+              className="flex__btn flex__btn--green">
+              Know more about me
+            </button>
           </div>
         </div>
-          <div className="flex__right">
-            <img src={cartoon} className="flex__right--picture" alt="Lady cartoon" />
-          </div>
+        <div className="flex__right">
+          <img src={cartoon} className="flex__right--picture" alt="Lady cartoon" />
+        </div>
       </motion.div>
       <Footer />
     </div>
