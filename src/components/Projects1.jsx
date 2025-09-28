@@ -9,7 +9,7 @@ const Projects1 = () => {
 			<motion.div	
 				initial={{ opacity: 0, scale: 0 }}
 				whileInView={{ opacity: 1, scale: 1 }}
-				transition={{ duration: 2 }}
+				transition={{ duration: 0.7 }}
 				className="project-card1__first-row"
 			>
 				<div className="project-card1__first-row--first-col">
@@ -62,7 +62,7 @@ const Projects1 = () => {
 					<motion.div
 						initial={{ opacity: 0, rotateX: "90deg" }}
 						whileInView={{ opacity: 1, rotateX: 0 }}
-						transition={{ duration: 2 }}
+						transition={{ duration: 0.6, delay: index * 0.15 }}
 						className="card-content1__single-card1"
 					>
 						<div className="card-content1__single-card1--left">
