@@ -3,14 +3,20 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import cartoon from "../assets/lady-cartoon.jpeg";
 import { useNavigate } from "react-router-dom";
+import { motion } from 'framer-motion';
 
 function HomePage() {
   const navigate = useNavigate();
 
   return (
     <div className="home-container">
-          <Navigation />
-      <div className="flex">
+      <Navigation />
+      <motion.div	
+				initial={{ opacity: 0, scale: 0 }}
+				whileInView={{ opacity: 1, scale: 1 }}
+				transition={{ duration: 1.2 }} 
+        className="flex"
+      >
         <div className="flex__left">
           <div className="flex__left--details">
             <h1 className="flex__left--details-primary">
@@ -31,7 +37,7 @@ function HomePage() {
           <div className="flex__right">
             <img src={cartoon} className="flex__right--picture" alt="Lady cartoon" />
           </div>
-      </div>
+      </motion.div>
       <Footer />
     </div>
   )
