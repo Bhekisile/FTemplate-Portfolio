@@ -1,4 +1,11 @@
 const projectsData = [
+   {
+    projectName: 'Todo Vite TypeScript',
+    projectDescription: 'This is a full-stack project demonstrating the use of TypeScript with ReactJS, ShadcnUI, Node.js, Express and MongoDB. From setting up TypeScript, instantiate a tsconfig.js file to advance use of TypeScript. In this course we touched everything about TypeScript, which includes interfaces, type aliases, enums, generics, tuples, abstract classes, access modifiers, type assertions, decorators, utility types, and dependency injection frameworks. We use a library called ZOD to validate the form and Tailwind for style.',
+    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1761825280/todots_adaxyx.png',
+    projectUrl: 'https://todo-vite-typescript.vercel.app/',
+    linkSource: 'https://github.com/Bhekisile/Todo-vite-typescript',
+  },
   {
     projectName: 'ProShop',
     projectDescription: 'This is an e-commerce platform I built throughout the course using React, Redux, Node, Express, and MongoDB. I had the opportunity to work with JWT authentication, a PayPal payment gateway, an admin area for managing customers, products, and orders, as well as features such as product ratings, reviews, search, carousel, pagination, and an image gallery. It is a seamless user experience and interactions with high web performance that online customers will enjoy.',
@@ -12,13 +19,6 @@ const projectsData = [
     imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097524/spaceHub_z7ykkp.png',
     projectUrl: 'https://spacetravelershub0x.netlify.app/',
     linkSource: 'https://github.com/Bupilipili/Space-Travelers-Hub',
-  },
-  {
-    projectName: 'Complex App',
-    projectDescription: 'The project is built with Node.js, Express, MongoDB, SendGrid, and Socket.io. It enables users to create posts, chat, send email, and follow each other. The user must log in, in order to have access to creating and modifying the post. The user can chat with other users and be able to read the posts of those he follows.',
-    imageUrl: 'https://res.cloudinary.com/dgimm1mwi/image/upload/v1731097523/complexApp_erfaia.png',
-    projectUrl: 'https://jscoursecomplex-app.onrender.com',
-    linkSource: 'https://github.com/Bhekisile/Complex-app',
   },
   {
     projectName: 'Stock Screener',

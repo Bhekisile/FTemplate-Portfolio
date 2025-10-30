@@ -168,7 +168,6 @@
     &__image1 {
       width: 60%;
       border-radius: 10px;
-      border: 1px solid red;
 
       @include respond(tab-port) {
         width: 80%;
