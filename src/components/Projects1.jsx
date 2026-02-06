@@ -35,7 +35,7 @@ const Projects1 = () => {
 						Booking Reminder App
 					</h2>
 					<div className="project-card1__first-row--description">
-						The application is for small businesses not more than four employees to manage their bookings and to remind their customers of their bookings by sending them an sms. The application is built with React Native (Expo), Ruby on Rails and PostgreSQL. It uses SMSPortal for sending sms to customers, AWS S3 bucket for storing images, Postmark for sending emails, and Payfast as payment gateway.
+						Booking Reminder is a multi-tenant appointment management platform built with Firebase and React Native Expo that helps small businesses manage clients, bookings, and automated email notifications from a single dashboard. The system allows organization owners to create and manage organizations, invite team members, and schedule client appointments with confirmation and reminder emails sent automatically. Each organization operates in an isolated environment with secure role-based access control.
 					</div>
 					<div className="project-card1__first-row--links">
 						<a
