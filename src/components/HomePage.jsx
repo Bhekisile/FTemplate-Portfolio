@@ -1,7 +1,7 @@
 import "../styles/HomePage.scss";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import cartoon from "../assets/lady-cartoon.jpeg";
+import cartoon from "../assets/desk-image.png";
 import { useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion';
 
