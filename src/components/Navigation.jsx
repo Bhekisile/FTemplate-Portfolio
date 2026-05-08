@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <div className="container-fluid container">
       <div className="container__logo">
-        <Link to="/"><li className="container__logo--green">BJ</li></Link>
+        <Link to="/"><li className="container__logo--green">SJ</li></Link>
       </div>
       <div className="navigation">
         <input type="checkbox" className="navigation__checkbox" id="navi-toggle"></input>
