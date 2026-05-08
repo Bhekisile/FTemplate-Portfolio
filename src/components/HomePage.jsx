@@ -21,7 +21,7 @@ function HomePage() {
           <div className="flex__left--details">
             <h1 className="flex__left--details-primary">
               <span className="flex__left--details-primary-main">Hello, I'm </span>
-              <span className="flex__left--details-primary-sub">Bhekisile Jozi</span>
+              <span className="flex__left--details-primary-sub">Sylvia Jozi</span>
             </h1>
             <p>I can help you build a website. Look through some of my work and experience! If you like what you see and have a project you need coded,
               don&apos;t hesitate to contact me.</p>

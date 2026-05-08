@@ -82,7 +82,7 @@ You can deploy this project using: Render / Netlify / Vercel
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Bhekisile Jozi**
+👤 **Sylvia Jozi**
 
 - GitHub: [@Bhekisile](https://github.com/Bhekisile)
 - LinkedIn: [BhekisileJozi](https://www.linkedin.com/in/bhekisile-jozi/)

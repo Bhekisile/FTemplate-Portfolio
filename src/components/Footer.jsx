@@ -1,9 +1,12 @@
 import "../styles/Footer.scss";
 
 function Footer() {
+  const currentYear = new Date().toISOString().split('T')[0].slice(0, 4);
+  // console.log('current year: ', currentYear);
+
   return (
     <footer className="footer">
-      <div className="footer__left">Copyright &copy; B Jozi</div>
+      <div className="footer__left">Copyright &copy; S Jozi 2025-{currentYear}</div>
       <ul className="footer__right">
         <li>
           <a
